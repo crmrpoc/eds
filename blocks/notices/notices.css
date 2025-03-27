@@ -1,0 +1,112 @@
+.notices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90%;
+    margin: auto;
+}
+
+.note {
+    width: 90%;
+    justify-content: center;
+    border-radius: 1rem;
+    border: black solid 2px;
+    background-color: #0066ff;
+    color: white;
+    padding: 1rem;
+
+    .notice-heading::before {
+        /* equivalent to `.notice .notice-heading::before` */
+        content: "ℹ︎ ";
+    }
+}
+
+
+.note > div > div > p > picture {
+    display: inline-block;
+    width: 10%;
+}
+
+.important {
+    width: 90%;
+    justify-content: center;
+    border-radius: 1rem;
+    border: black solid 2px;
+    background-color: #8957e5;
+    color: white;
+    padding: 1rem;
+
+    .notice-heading::before {
+        /* equivalent to `.notice .notice-heading::before` */
+        content: "ℹ︎ ";
+    }
+}
+
+
+.important > div > div > p > picture {
+    display: inline-block;
+    width: 10%;
+}
+
+.warning {
+        /* equivalent to `.notice.warning` */
+        width: 90%;
+        justify-content: center;
+        border-radius: 1rem;
+        border: black solid 2px;
+        background-color: #9e6a03;
+        color: white;
+        padding: 1rem;
+
+        .warning-heading::before {
+            /* equivalent to `.notice.warning .warning-heading::before` */
+            content: "! ";
+        }
+}
+
+.warning > div > div > p > picture {
+    display: inline-block;
+    width: 10%;
+}
+
+.tip {
+        /* equivalent to `.notice.success` */
+        width: 90%;
+        justify-content: center;
+        border-radius: 1rem;
+        border: black solid 2px;
+        background-color: #238636;
+        color: white;
+        padding: 1rem;
+
+        .success-heading::before {
+            /* equivalent to `.notice.success .success-heading::before` */
+            content: "✓ ";
+        }
+    }
+
+    .tip > div > div > p > picture {
+        display: inline-block;
+        width: 10%;
+    }
+
+.caution {
+    /* equivalent to `.notice.success` */
+    width: 90%;
+    justify-content: center;
+    border-radius: 1rem;
+    border: black solid 2px;
+    background-color: #da3633;
+    color: white;
+    padding: 1rem;
+
+    .success-heading::before {
+        /* equivalent to `.notice.success .success-heading::before` */
+        content: "✓ ";
+    }
+}
+
+.caution > div > div > p > picture {
+    display: inline-block;
+    width: 10%;
+}
